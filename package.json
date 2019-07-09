@@ -1,14 +1,16 @@
 {
-  "name": "@vettvangur/pagination",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@vettvangur/react-paginator",
+  "version": "0.0.2",
+  "author": "Ólafur Hólm Eyþórsson <olafur@vettvangur.is> (https://ohe.is)",
+  "description": "React paginator",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config ./webpack --env.production"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com/"
+    "registry": "https://registry.npmjs.com/"
   },
+  "license": "MIT",
   "dependencies": {
     "@types/node": "^12.0.10",
     "@types/react": "^16.8.22",
@@ -23,4 +25,13 @@
     "react": ">=16.0.0",
     "react-dom": ">=16.0.0"
   },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vettvangur/Pagination.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Vettvangur/Pagination/issues"
+  },
+  "homepage": "https://github.com/Vettvangur/Pagination#readme"
 }
