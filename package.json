@@ -1,6 +1,6 @@
 {
   "name": "@vettvangur/react-paginator",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Ólafur Hólm Eyþórsson <olafur@vettvangur.is> (https://ohe.is)",
   "description": "React paginator",
   "main": "dist/main.min.js",
