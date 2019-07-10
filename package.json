@@ -1,30 +1,21 @@
 {
-  "name": "@vettvangur/react-paginator",
-  "version": "0.0.4",
+  "name": "@vettvangur/react-pagination",
+  "version": "0.0.1",
   "author": "Ólafur Hólm Eyþórsson <olafur@vettvangur.is> (https://ohe.is)",
   "description": "React paginator",
-  "main": "dist/main.min.js",
-  "source": "src/Pagination.tsx",
-  "types": "./index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "webpack --config ./webpack --env.production"
+    "build": "tsc"
   },
   "license": "MIT",
   "dependencies": {
-    "@types/node": "^12.6.1",
-    "@types/react": "^16.8.22",
+    "@types/node": "^12.6.2",
+    "@types/react": "^16.8.23",
     "react": "^16.8.6",
-    "ts-loader": "^6.0.4",
-    "typescript": "^3.5.2",
-    "uuid": "^3.3.2",
-    "webpack": "^4.35.2",
-    "webpack-cli": "^3.3.5"
+    "typescript": "^3.5.3",
+    "uuid": "^3.3.2"
   },
-  "peerDependencies": {
-    "react": ">=16.0.0",
-    "react-dom": ">=16.0.0"
-  },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Vettvangur/Pagination.git"

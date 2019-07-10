@@ -3,7 +3,7 @@ const paths = require('./paths');
 module.exports = {
   contentBase: paths.public,
   compress: false,
-  port: 8080,
+  port: 8081,
   open: false,
   headers: {
     'Access-Control-Allow-Origin': '*'

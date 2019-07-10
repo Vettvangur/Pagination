@@ -7,9 +7,11 @@
   },
   "dependencies": {
     "@types/react": "^16.8.22",
-    "@vettvangur/react-paginator": "^0.0.2",
+    "@vettvangur/react-pagination": "latest",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
     "webpack": "^4.35.2",
     "webpack-cli": "^3.3.5",
     "webpack-dev-server": "^3.7.2"

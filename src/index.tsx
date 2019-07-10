@@ -1,12 +1,12 @@
 import * as React from 'react'
-import { getLastPage, pagination } from 'helpers/paginationHelper';
+import { getLastPage, pagination } from './helpers/paginationHelper';
 
-interface IPaginationProps {
+export interface IPaginationProps {
   onPageChange: (page: number) => void;
   total: number;
   selectedPage: number;
   pageSize: number;
-  showNextPrev: boolean;
+  showNextPrev?: boolean;
   prevLabel?: Node | string;
   nextLabel?: Node | string;
   disableInlineStyles?: boolean;
@@ -27,11 +27,14 @@ const Pagination: React.FC<IPaginationProps> = (
   }
 ) => {
   
-  let lastPage = getLastPage(total, pageSize,);
+  let lastPage = getLastPage(total, pageSize);
   if (lastPage < selectedPage) {
     lastPage += 1
   }
   const paginationArray = pagination(selectedPage, lastPage, delta);
+
+  const canPrev = selectedPage > 1;
+  const canNext = selectedPage < lastPage
 
   const handlePageChange = (next: number) => {
     onPageChange(+next);
@@ -42,7 +45,7 @@ const Pagination: React.FC<IPaginationProps> = (
   return (
     <div className="pagination">
       {showNextPrev && (
-        <button className="pagination__button--prev" onClick={() => handlePageChange(selectedPage - 1)}>{prevLabel}</button>
+        <button className="pagination__button--prev" disabled={!canPrev} onClick={() => handlePageChange(selectedPage - 1)}>{prevLabel}</button>
       )}
       <ul className="pagination__list">
         {paginationArray.map((p, index) => (
@@ -52,7 +55,7 @@ const Pagination: React.FC<IPaginationProps> = (
         ))}
       </ul>
       {showNextPrev && (
-        <button className="pagination__button--next" onClick={() => handlePageChange(selectedPage + 1)}>{nextLabel}</button>
+        <button className="pagination__button--next" disabled={!canNext} onClick={() => handlePageChange(selectedPage + 1)}>{nextLabel}</button>
       )}
     </div>
   )

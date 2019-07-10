@@ -18,33 +18,30 @@
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
 
-"@types/node@*", "@types/node@^12.0.10":
-  version "12.6.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.6.1.tgz#d5544f6de0aae03eefbb63d5120f6c8be0691946"
+"@types/node@*", "@types/node@^12.6.2":
+  version "12.6.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.6.2.tgz#a5ccec6abb6060d5f20d256fb03ed743e9774999"
 
 "@types/prop-types@*":
   version "15.7.1"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.1.tgz#f1a11e7babb0c3cad68100be381d1e064c68f1f6"
 
-"@types/react@^16.8.22":
+"@types/react@^16.8.22", "@types/react@^16.8.23":
   version "16.8.23"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.8.23.tgz#ec6be3ceed6353a20948169b6cb4c97b65b97ad2"
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
-"@vettvangur/react-paginator@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@vettvangur/react-paginator/-/react-paginator-0.0.2.tgz#164744a5539d122a26a8f2bbf3cd88728f9ba884"
+"@vettvangur/react-pagination@latest":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@vettvangur/react-pagination/-/react-pagination-0.0.1.tgz#238ce042ec2b25de8e84f3be7db85a5cbf4c89eb"
   dependencies:
-    "@types/node" "^12.0.10"
-    "@types/react" "^16.8.22"
+    "@types/node" "^12.6.2"
+    "@types/react" "^16.8.23"
     react "^16.8.6"
-    ts-loader "^6.0.4"
-    typescript "^3.5.2"
+    typescript "^3.5.3"
     uuid "^3.3.2"
-    webpack "^4.35.2"
-    webpack-cli "^3.3.5"
 
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
@@ -1798,8 +1795,8 @@ locate-path@^3.0.0:
     path-exists "^3.0.0"
 
 lodash@^4.17.11:
-  version "4.17.11"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
+  version "4.17.13"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.13.tgz#0bdc3a6adc873d2f4e0c4bac285df91b64fc7b93"
 
 loglevel@^1.6.3:
   version "1.6.3"
@@ -3146,7 +3143,7 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-typescript@^3.5.2:
+typescript@^3.5.3:
   version "3.5.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.5.3.tgz#c830f657f93f1ea846819e929092f5fe5983e977"
 
